@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
+@Entity
+@Table(name = "tb_product")
 public class Product implements Serializable{
     private static final long serialVersionUID = -478666422148522L;
 
