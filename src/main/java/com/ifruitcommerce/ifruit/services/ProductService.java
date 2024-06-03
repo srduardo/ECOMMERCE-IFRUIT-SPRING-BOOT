@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 public class ProductService {
     @Autowired
     private ProductRepository productRepository;
-
     public Product getProductByName(String name){
         return productRepository.findProductByName(name);
     }

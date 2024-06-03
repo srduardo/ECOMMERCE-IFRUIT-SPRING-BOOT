@@ -39,7 +39,7 @@ public class TestConfig implements CommandLineRunner {
         categoryRepository.saveAll(Arrays.asList(c1, c2));
 
         Product pr1 = new Product(5L, "Bala", "Bala doce", 1.00, "imagem");
-        Product pr2 = new Product(6L, "Pudim", "Pudim doce", 6.00, "imagem");
+        Product pr2 = new Product(6L, "Couve", "Salada", 6.00, "imagem");
 
         productRepository.saveAll(Arrays.asList(pr1, pr2));
 
@@ -61,7 +61,7 @@ public class TestConfig implements CommandLineRunner {
         User u3 = userRepository.findUserByEmail("eduardo.silva@exemplo.com");
         System.out.println("Nome: " + u3.getName() + " Email: " + u3.getEmail());
 
-        Product pr3 = productRepository.findProductByName("Bala");
+        Product pr3 = productRepository.findProductByName("Couve");
         System.out.println("Nome: " + pr3.getName() + " Descrição: " + pr3.getDescription());
     }
 }

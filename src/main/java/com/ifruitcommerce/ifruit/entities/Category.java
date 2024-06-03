@@ -1,7 +1,6 @@
 package com.ifruitcommerce.ifruit.entities;
 
 import jakarta.persistence.*;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.io.Serializable;
 import java.util.Objects;
